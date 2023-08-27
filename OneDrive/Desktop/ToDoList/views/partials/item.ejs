@@ -1,0 +1,24 @@
+<%- include("header.ejs")%>
+<div class="heading">
+        <h1><%=listTitle%></h1>   
+</div>
+<div class="Box">
+<%if(locals.tasks){%>
+<form class="todoitem" action="/delete" method="POST">
+    <%tasks.forEach((taskitem)=>{%>
+    <div class="itemstodo">
+    <input type="checkbox" class="box checkbtn" name="buttonvalue" value="<%=taskitem._id%>" onchange="this.form.submit()" >
+    <h2><%=taskitem.name%> </h2>
+    </div>
+    <%})%>
+    <input type="hidden" name="listName" value="<%=listTitle%>" ></input>
+</form>
+<%}%>
+<div class="content">
+    <form action="/submit" method="POST">
+        <input type="text" class="Item" placeholder="New Item" name="itemvalue">
+    <button class="btn" type="submit" name="listName" value="<%=listTitle%>" >➕</button>
+</form>
+ </div>
+</div>
+<%- include("footer.ejs")%>

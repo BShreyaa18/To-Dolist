@@ -1,0 +1,78 @@
+.head{
+    padding: 20px;
+}
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+.cstyle{
+    text-decoration: line-through;
+}
+.itemstodo{
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px dotted rgb(140, 131, 131);
+    background-color: white;
+    width:28.3%;
+    padding:20px;
+}
+.todoitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    margin-right: 25px;
+}
+.Item{
+    border: none;
+    height:4.7pc;
+    width:28.9pc;
+    font-size: 25px;
+    text-align: center;
+}
+.btn{
+    margin-left: -40px;
+}
+a{
+    text-decoration: none;
+    font-size:20px;
+    color:#5b367a;
+    padding: 25px;
+}
+footer{
+    text-align: center;
+    color: #7c51a0;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border:1px solid white;
+    border-radius:4px;
+    width:30%;
+    background-color: #A683E3;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input:checked+h2 {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+  }
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+  }  
+    
